@@ -15,7 +15,7 @@ let RouteTemplate = ({ routes, toCurrency, fromCurrency }: any) => {
     }
   };
   return (
-    <div className="text-white mt-10 rounded-md">
+    <div className="text-white mt-10 rounded-md w-96 items-center flex flex-col justify-center">
       {routes.map((route: any, i: number) => (
         <div key={i + "_route"} className="flex flex-row gap-2">
           <span>{i + 1}.</span>
@@ -33,7 +33,7 @@ let RouteTemplate = ({ routes, toCurrency, fromCurrency }: any) => {
                 )
               }
             >
-              Go to
+              Go
             </span>
           )}
         </div>
